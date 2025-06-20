@@ -30,6 +30,10 @@ public class Product {
     public double getDiscountedPrice() {
         return price; // No discount for base products
     }
+
+	public void setQuantity(int quan) {
+		this.quantity = quan;
+	}
 }
 
 // Subclasses for specific product categories
