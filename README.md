@@ -79,4 +79,4 @@ This project demonstrates proficiency in:
 - **Data Management**: Filtering, selection, and display of structured data
 
 ---
-**Part of my programming portfolio** | (https://github.com/AGButt04) | https://www.linkedin.com/in/abdul-ghani-butt-290056338/
+**Part of my programming portfolio** | [Github Profile](https://github.com/AGButt04) | [LinkedIn](https://www.linkedin.com/in/abdul-ghani-butt-290056338/)
