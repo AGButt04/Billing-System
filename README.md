@@ -1,34 +1,81 @@
-💰 Java Billing System GUI
-A dynamic Java Swing application that allows users to manage and generate bills for products across different categories—Food, Clothing, and Electronics—with category-based discounts. 
-It features interactive tables, category filtering, and live total cost calculation.
+💰 Java Billing System
+A desktop point-of-sale application built with Java Swing that manages product inventory and generates bills with category-based discounts. Features a dual-table interface for product browsing and bill management with real-time total calculation.
+🎯 What I Built
 
-✨ Features
-🧾 Dynamic Billing with category-specific discounts
+Product Management: Inventory system with multiple product categories (Food, Clothing, Electronics)
+Bill Generation: Dynamic billing with automatic discount application
+Category Filtering: Filter products by type for easier browsing
+Real-time Calculations: Live total cost updates as items are added
+Dual-Table Interface: Separate views for available products and current bill
 
-🔍 Filter products by category via JComboBox
+✨ Key Features
 
-📊 View product list and bill summary in tables
+🏪 Multi-Category Inventory: Pre-loaded products across Food, Clothing, and Electronics
+🎫 Smart Billing: Add products to the bill with automatic discount calculation
+🔍 Category Filter: Dropdown to filter products by category or view all
+💲 Dynamic Pricing: Real-time total cost calculation with formatted currency display
+🖥️ Professional UI: Clean table-based interface with scroll functionality
+📊 Bill Tracking: A Separate table showing selected items with discounted prices
 
-🖱️ Add to Bill with one click
+🏗️ Project Architecture
+src/
+├── BillingSystem.java    # Main application with GUI and event handling
+├── Product.java          # Abstract base class for all products
+├── Food.java             # Food category with specific discount logic
+├── Clothing.java         # Clothing category with specific discount logic
+├── Electronics.java      # Electronics category with specific discount logic
+├── Bill.java             # Bill management and total calculation
+└── README.md            # Project documentation
+🔧 Implementation Details
 
-💵 Real-time total cost display
+Object-Oriented Design: Inheritance hierarchy with Product base class and category-specific subclasses
+GUI Architecture: JTable components for data display with DefaultTableModel for dynamic updates
+Event Handling: ActionListener implementations for button clicks and dropdown selection
+Data Management: ArrayList for product storage with real-time filtering capabilities
 
-🛠 Technologies Used
-Java 8+
+🚀 Getting Started
+bash# Clone the repository
+git clone https://github.com/AGButt04/Billing-System.git
 
-Java Swing (JFrame, JTable, JComboBox, JScrollPane)
+# Navigate to project directory
+cd Billing-System
 
-Object-Oriented Programming (Inheritance, Polymorphism)
+# Compile the Java files
+javac *.java
 
-🧩 How It Works
-Products are created with categories and pre-defined discounts:
+# Run the application
+java BillingSystem
+IDE Setup:
 
-Food – 10%
+Import the project into your Java IDE (IntelliJ IDEA, Eclipse, VS Code)
+Ensure JDK 8+ is configured
+Run BillingSystem.java as the main class
 
-Clothing – 20%
+🔧 Technologies & Concepts
 
-Electronics – 15%
+Java SE - Core programming language
+Swing Framework - Desktop GUI components (JTable, JComboBox, JButton)
+Object-Oriented Programming - Inheritance, polymorphism, and encapsulation
+Event-Driven Architecture - ActionListener pattern for user interactions
+Data Structures - ArrayList for dynamic product management
+MVC Pattern - Separation of data (models) and presentation (views)
 
-Users select a product and click "Add to Bill" to include it in the final bill.
+💡 Technical Highlights
 
-The bill table updates with discounted prices and a live total cost.
+Polymorphic Design: Different product categories with category-specific discount calculations
+Dynamic Table Management: Real-time filtering and updating of JTable components
+Currency Formatting: Proper decimal formatting for financial calculations
+User Input Validation: Error handling for invalid product selections
+Memory Efficient: Lightweight data structures for small-scale inventory management
+
+📖 Learning Outcomes
+This project demonstrates proficiency in:
+
+Desktop Application Development: Building functional business applications with Java Swing
+Object-Oriented Design Patterns: Implementing inheritance hierarchies and polymorphism
+GUI Event Handling: Managing user interactions and real-time data updates
+Business Logic Implementation: Discount calculation and billing system workflows
+Data Management: Filtering, selection, and display of structured data
+
+
+Part of my programming portfolio |(https://github.com/AGButt04) | (https://www.linkedin.com/in/abdul-ghani-butt-290056338/)
